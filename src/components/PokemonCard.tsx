@@ -1,4 +1,9 @@
-function PokemonCard({ pokemon }) {
+interface Pokemon {
+  pokemon: { name: string; imgSrc?: string };
+}
+
+function PokemonCard({ pokemon }: Pokemon) {
+  console.log(pokemon);
   return (
     <figure>
       {pokemon.imgSrc ? (

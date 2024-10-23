@@ -3,7 +3,6 @@ interface Pokemon {
 }
 
 function PokemonCard({ pokemon }: Pokemon) {
-  console.log(pokemon);
   return (
     <figure>
       {pokemon.imgSrc ? (
